@@ -1,0 +1,88 @@
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkbluemain: hsl(217, 54%, 11%);
+    --Verydarkbluecard: hsl(216, 50%, 16%);
+    --Verydarkblueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%)
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--Verydarkbluemain);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+main .img{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 80%;
+    background: var(--Verydarkbluecard);
+    border-radius: 20px;
+}
+.img img{
+    width: 100%;
+    border-radius: 15px;
+}
+h1{
+    color: var(--White);
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: x-large;
+}
+h1, p{
+    margin: 20px 20px;
+}
+main p{
+    color: var(--Softblue);
+}
+.text{
+    font-size: larger;
+}
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Verydarkblueline);
+}
+.price span{
+    color: var(--Cyan);
+    font-size: 20px;
+    font-weight: 700;
+}
+.time span{
+    color: var(--Softblue);
+    font-size: 20px;
+}
+.user img{
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    width: 50px;
+}
+.user{
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.user p{
+    color: var(--White);
+}
+.user p span{
+    color: var(--Softblue);
+}
+@media(min-width:1000px){
+    main{
+        width: 25%;
+        height: auto;
+    }
+}
